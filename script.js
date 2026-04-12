@@ -15,21 +15,6 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 const clamp = (val, min, max) => Math.min(Math.max(val, min), max);
 
 /* =============================================================
-   1. PRELOADER
-============================================================= */
-(function initPreloader() {
-  const preloader = $('#preloader');
-  if (!preloader) return;
-
-  // Minimum display: wait for page load + 800ms
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      preloader.classList.add('hidden');
-    }, 800);
-  });
-})();
-
-/* =============================================================
    2. NAVBAR — scroll shrink + active link tracking
 ============================================================= */
 (function initNavbar() {

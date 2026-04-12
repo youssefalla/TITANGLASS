@@ -729,10 +729,14 @@ h1, h2, h3, h4 {
 .gallery-filters {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   margin-bottom: 40px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
 }
+.gallery-filters::-webkit-scrollbar { display: none; }
 
 .filter-btn {
   font-family: var(--font-body);

@@ -252,22 +252,15 @@ h1, h2, h3, h4 {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
   flex-shrink: 0;
 }
 
-.logo-text {
-  font-family: var(--font-head);
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  color: var(--white);
-  text-transform: uppercase;
-  line-height: 1;
+.nav-logo-img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
 }
-
-.logo-accent { color: var(--ice); }
 
 .nav-menu {
   display: flex;
@@ -1570,8 +1563,13 @@ h1, h2, h3, h4 {
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   margin-bottom: 12px;
+}
+
+.footer-logo-img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
 }
 
 .footer-logo span {
